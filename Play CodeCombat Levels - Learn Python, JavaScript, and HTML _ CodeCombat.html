@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://codecombat.com/play/dungeon?hour_of_code=true -->
+<html lang="en" style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/vt323.css"><meta name="viewport" content="width=1024" data-vue-meta="true" data-vmid="viewport"><meta http-equiv="Accept-CH" content="Viewport-Width"><title data-i18n="new_home.title">Play CodeCombat Levels - Learn Python, JavaScript, and HTML | CodeCombat</title><meta name="keywords" data-i18n="[content]new_home.meta_keywords" content="CodeCombat, python, javascript, Coding Games"><meta name="description" data-i18n="[content]new_home.meta_description" content="Learn typed code through a programming game. Learn Python, JavaScript, and HTML as you solve puzzles and learn to make your own coding games and websites."><meta property="og:title" data-i18n="[content]new_home.title" content="CodeCombat - Coding games to learn Python and JavaScript"><meta property="og:description" data-i18n="[content]new_home.meta_description" content="Learn typed code through a programming game. Learn Python, JavaScript, and HTML as you solve puzzles and learn to make your own coding games and websites."><meta property="og:url" data-i18n="[content]new_home.meta_og_url" content="https://codecombat.com"><meta property="og:type" content="game"><meta property="og:image" content="https://codecombat.com/images/pages/home/play_img.png"><meta property="og:image:alt" content="CodeCombat"><meta property="og:site_name" content="CodeCombat"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="CodeCombat: Learn to Code by Playing a Game"><meta name="twitter:url" content="https://codecombat.com"><meta name="twitter:site" content="CodeCombat"><meta name="twitter:image:src" content="http://codecombat.com/images/pages/base/logo_square_250.png"><meta name="twitter:description" content="Learn programming with a multiplayer live coding strategy game for beginners. Learn Python or JavaScript as you defeat ogres, solve mazes, and level up. Open source HTML5 game!"><meta name="p:domain_verify" content="f5afcb2c36bb8b1cbd70c44b65e5ec75"><meta name="fb:app_id" content="148832601965463"><link rel="apple-touch-icon" sizes="180x180" href="https://codecombat.com/images/favicon/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://codecombat.com/images/favicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://codecombat.com/images/favicon/favicon-16x16.png"><link rel="mask-icon" href="https://codecombat.com/images/favicon/safari-pinned-tab.svg" color="#5bbad5"><link rel="shortcut icon" href="https://codecombat.com/images/favicon/favicon.ico"><meta name="msapplication-TileColor" content="#da532c"><meta name="msapplication-config" content="/images/favicon/browserconfig.xml"><link rel="manifest" href="https://codecombat.com/pwa/manifest.json"><link rel="stylesheet" href="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/app.css"><script type="text/javascript" async="" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/f.txt"></script><script async="" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/fbevents.js.download"></script><script async="" crossorigin="anonymous" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/fs.js.download"></script><script async="" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/analytics.js.download"></script><script>var DEXECURE_URL = "/dexecure-c167a5675c.js";
+"serviceWorker"in navigator&&navigator.serviceWorker.register(DEXECURE_URL,{scope:'/'}).then(function(e){"/"!=new URL(e.scope).pathname&&console.log("Service worker scope is not /")})["catch"](function(e){console.log("Unable to register service worker.");console.log(e)});</script><script>window.javascriptsPath = '/production-2021-11-26-00-35-31/javascripts/';</script><script src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/app.js.download" defer="" async="" data-ace-base="/javascripts/ace">// This data tag needs to be on SOME script with a src for Ace to work</script><script src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/user-data"></script><link rel="stylesheet" type="text/css" href="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/92.css"><script charset="utf-8" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/UsFont-30ecbf07c926da8c671a.bundle.js.download"></script><style type="text/css">.treema-target-of-copy-paste {
+  transform: translateX(10px); }
+
+.treema-node {
+  transition: 0.1s ease-in-out transform;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  position: relative;
+  font-family: Helvetica;
+  clear: both;
+  border-bottom: 1px solid #ccc;
+  font-size: 13px;
+  cursor: pointer; }
+  .treema-node.treema-root > .treema-row .treema-value, .treema-node.treema-root > .treema-row .treema-type-select {
+    display: none; }
+  .treema-node.treema-open > .treema-children {
+    padding-top: 1px; }
+  .treema-node.treema-root {
+    outline: none; }
+  .treema-node input, .treema-node select {
+    font-size: 13px;
+    font-family: Helvetica; }
+  .treema-node input {
+    margin: -3px 0;
+    width: 200px; }
+  .treema-node .treema-new-prop {
+    margin: -1px 0 10px; }
+
+.treema-type-select, .treema-schema-select {
+  margin-right: 5px;
+  float: left; }
+
+.treema-children {
+  margin-left: 15px;
+  clear: both; }
+
+.treema-add-child {
+  background-color: #eef;
+  border: 1px solid #aaf;
+  cursor: pointer;
+  display: inline-block;
+  margin: 3px 0 10px;
+  padding: 0px 5px;
+  font-weight: bold;
+  position: relative;
+  left: -10px; }
+  .treema-add-child:hover {
+    background-color: #ccf; }
+
+.treema-full > .treema-children > .treema-add-child {
+  display: none; }
+
+.treema-full.treema-open > .treema-children {
+  margin-bottom: 5px; }
+
+.treema-row {
+  padding: 2px 3px 2px 3px; }
+
+.treema-value {
+  cursor: text;
+  display: block;
+  float: left;
+  max-width: 100%;
+  min-width: 50px; }
+
+.treema-key {
+  color: #5353ac;
+  float: left;
+  display: block;
+  cursor: pointer;
+  margin-right: 5px; }
+
+.treema-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  background-color: rgba(64, 128, 255, 0);
+  pointer-events: none;
+  width: 100%;
+  cursor: pointer; }
+
+.treema-description {
+  float: right;
+  opacity: 0.8;
+  font-size: 11px;
+  line-height: 13px;
+  min-width: 200px;
+  text-align: right;
+  display: none; }
+
+.treema-selected > .treema-row > .treema-description {
+  display: inline; }
+
+.treema-edit + .treema-description {
+  display: inline; }
+
+.treema-selected > .treema-row {
+  background-color: rgba(64, 128, 255, 0.25); }
+
+.treema-error {
+  float: right;
+  color: #8b0000;
+  margin: 2px 10px; }
+
+.treema-has-error {
+  background-color: #ffb6c1;
+  border: 1px solid #8b0000; }
+
+.treema-temp-error {
+  background-color: #ffb6c1;
+  padding: 2px 3px;
+  color: #8b0000;
+  margin: 0 5px;
+  border: 1px solid #8b0000; }
+
+.treema-toggle-hit-area {
+  cursor: pointer;
+  width: 15px;
+  float: left;
+  position: absolute;
+  left: -15px;
+  top: 0;
+  bottom: 0; }
+  .treema-toggle-hit-area:hover {
+    background-color: rgba(128, 128, 128, 0.1); }
+    .treema-toggle-hit-area:hover .treema-toggle {
+      opacity: 1; }
+  .treema-toggle-hit-area .treema-toggle {
+    width: 0;
+    height: 0;
+    opacity: 0.7;
+    position: absolute; }
+    .treema-closed > .treema-toggle-hit-area .treema-toggle {
+      border-top: 6px solid transparent;
+      border-bottom: 6px solid transparent;
+      border-left: 8px solid #666;
+      top: 5px;
+      left: 5px; }
+    .treema-open > .treema-toggle-hit-area .treema-toggle {
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 8px solid #666;
+      top: 7px;
+      left: 3px; }
+
+.treema-clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.treema-shortened {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.treema-multiline {
+  width: inherit;
+  margin-top: 20px;
+  float: none !important; }
+
+.treema-clipboard-container {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+  z-index: 100;
+  display: none;
+  opacity: 0; }
+  .treema-clipboard-container .treema-clipboard {
+    width: 1px;
+    height: 1px;
+    padding: 0px; }
+
+.treema-filter-hidden {
+  display: none; }
+
+.treema-default-stub {
+  opacity: 0.7; }
+
+.treema-string {
+  color: #998500; }
+
+.treema-number {
+  color: #699900; }
+
+.treema-null {
+  color: #524059;
+  font-weight: bold; }
+
+.treema-array {
+  color: #009905;
+  cursor: row-resize; }
+
+.treema-object {
+  color: #008799;
+  cursor: row-resize; }
+
+.treema-boolean {
+  color: #140099;
+  cursor: pointer; }
+  .treema-boolean.treema-edit {
+    background-color: rgba(64, 128, 255, 0.25); }
+  .treema-boolean input {
+    opacity: 0; }
+  .treema-boolean:hover + .treema-description {
+    display: inline; }
+
+.treema-point2d input, .treema-point3d input {
+  width: 40px; }
+
+.treema-search-results {
+  width: 500px;
+  margin-top: 10px;
+  cursor: pointer; }
+
+.treema-search-result-row:hover {
+  background-color: rgba(166, 196, 255, 0.25); }
+
+.treema-search-selected {
+  background-color: rgba(64, 128, 255, 0.25) !important; }
+
+.treema-ace.treema-display .treema-shortened {
+  font-family: monospace; }
+
+.treema-ace .ace_editor {
+  width: 100%;
+  border: 1px solid gray; }
+
+.treema-long-string textarea {
+  width: 100%;
+  height: 300px; }
+
+
+/*# sourceMappingURL=treema.css.map*/</style><style type="text/css">div.fancy-select {
+	position: relative;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #46565D;
+}
+
+div.fancy-select.disabled {
+	opacity: 0.5;
+}
+
+div.fancy-select select:focus + div.trigger {
+	box-shadow: 0 0 0 2px #4B5468;
+}
+
+div.fancy-select select:focus + div.trigger.open {
+	box-shadow: none;
+}
+
+div.fancy-select div.trigger {
+	border-radius: 4px;
+	cursor: pointer;
+	padding: 10px 24px 9px 9px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	position: relative;
+	background: #99A5BE;
+	border: 1px solid #99A5BE;
+	border-top-color: #A5B2CB;
+	color: #4B5468;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	width: 200px;
+
+	transition: all 240ms ease-out;
+	-webkit-transition: all 240ms ease-out;
+	-moz-transition: all 240ms ease-out;
+	-ms-transition: all 240ms ease-out;
+	-o-transition: all 240ms ease-out;
+}
+
+div.fancy-select div.trigger:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 5px solid transparent;
+	border-top-color: #4B5468;
+	top: 20px;
+	right: 9px;
+}
+
+div.fancy-select div.trigger.open {
+	background: #4A5368;
+	border: 1px solid #475062;
+	color: #7A8498;
+	box-shadow: none;
+}
+
+div.fancy-select div.trigger.open:after {
+	border-top-color: #7A8498;
+}
+
+div.fancy-select ul.options {
+	list-style: none;
+	margin: 0;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 50;
+	max-height: 200px;
+	overflow: auto;
+	background: #62C8BF;
+	border-radius: 4px;
+	border-top: 1px solid #7DD8D2;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	min-width: 200px;
+
+	transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+}
+
+div.fancy-select ul.options.open {
+	visibility: visible;
+	top: 50px;
+	opacity: 1;
+
+	/* have to use a non-visibility transition to prevent this iOS issue (bug?): */
+	/*http://stackoverflow.com/questions/10736478/css-animation-visibility-visible-works-on-chrome-and-safari-but-not-on-ios*/
+	transition: opacity 300ms ease-out, top 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, top 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, top 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, top 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, top 300ms ease-out;
+}
+
+div.fancy-select ul.options.overflowing {
+	top: auto;
+	bottom: 40px;
+
+	transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+}
+
+div.fancy-select ul.options.overflowing.open {
+	top: auto;
+	bottom: 50px;
+
+	transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	-webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	-ms-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+	-o-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+}
+
+div.fancy-select ul.options li {
+	padding: 8px 12px;
+	color: #2B8686;
+	cursor: pointer;
+	white-space: nowrap;
+
+	transition: all 150ms ease-out;
+	-webkit-transition: all 150ms ease-out;
+	-moz-transition: all 150ms ease-out;
+	-ms-transition: all 150ms ease-out;
+	-o-transition: all 150ms ease-out;
+}
+
+div.fancy-select ul.options li.selected {
+	background: rgba(43,134,134,0.3);
+	color: rgba(255,255,255,0.75);
+}
+
+div.fancy-select ul.options li.hover {
+	color: #fff;
+}</style><style type="text/css">/** initial setup **/
+.nano {
+  position : relative;
+  width    : 100%;
+  height   : 100%;
+  overflow : hidden;
+}
+.nano > .nano-content {
+  position      : absolute;
+  overflow      : scroll;
+  overflow-x    : hidden;
+  top           : 0;
+  right         : 0;
+  bottom        : 0;
+  left          : 0;
+}
+.nano > .nano-content:focus {
+  outline: thin dotted;
+}
+.nano > .nano-content::-webkit-scrollbar {
+  display: none;
+}
+.has-scrollbar > .nano-content::-webkit-scrollbar {
+  display: block;
+}
+.nano > .nano-pane {
+  background : rgba(0,0,0,.25);
+  position   : absolute;
+  width      : 10px;
+  right      : 0;
+  top        : 0;
+  bottom     : 0;
+  visibility : hidden\9; /* Target only IE7 and IE8 with this hack */
+  opacity    : .01;
+  -webkit-transition    : .2s;
+  -moz-transition       : .2s;
+  -o-transition         : .2s;
+  transition            : .2s;
+  -moz-border-radius    : 5px;
+  -webkit-border-radius : 5px;
+  border-radius         : 5px;
+}
+.nano > .nano-pane > .nano-slider {
+  background: #444;
+  background: rgba(0,0,0,.5);
+  position              : relative;
+  margin                : 0 1px;
+  -moz-border-radius    : 3px;
+  -webkit-border-radius : 3px;
+  border-radius         : 3px;
+}
+.nano:hover > .nano-pane, .nano-pane.active, .nano-pane.flashed {
+  visibility : visible\9; /* Target only IE7 and IE8 with this hack */
+  opacity    : 0.99;
+}
+</style><style type="text/css">.resize-observer[data-v-b329ee4c]{position:absolute;top:0;left:0;z-index:-1;width:100%;height:100%;border:none;background-color:transparent;pointer-events:none;display:block;overflow:hidden;opacity:0}.resize-observer[data-v-b329ee4c] object{display:block;position:absolute;top:0;left:0;height:100%;width:100%;overflow:hidden;pointer-events:none;z-index:-1}</style><!-- Google Analytics--><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-39724129-1', 'auto');
+</script><!-- Global site tag (gtag.js) - Google Ads: 811324643--><script async="" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/js"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-811324643');</script><script src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/checkout.js.download"></script><!-- Webpack-inserted CSS:--><script>//- This runs for pages without specific static templates
+//- Those pages with static templates run this themselves (in mock.static.pug),
+//-   after setting window.alreadyLoadedView
+function onLoad() {
+  try {
+      // IE10 warning
+      var htmlElement = document.querySelector("html");
+      if (htmlElement) {
+          if ($.browser.msie && $.browser.edge != true) {
+            if ((window.location.pathname || "").indexOf("web-dev-level") < 0) {
+              alert("CodeCombat does not support Internet Explorer, but runs on all other major browsers.");
+              }
+          }
+      }
+      // IE8 can't handle this
+      FastClick.attach(document.body);
+  } catch (error) { }
+}</script><style type="text/css">.cc-window{opacity:1;-webkit-transition:opacity 1s ease;transition:opacity 1s ease}.cc-window.cc-invisible{opacity:0}.cc-animate.cc-revoke{-webkit-transition:transform 1s ease;-webkit-transition:-webkit-transform 1s ease;transition:-webkit-transform 1s ease;transition:transform 1s ease;transition:transform 1s ease,-webkit-transform 1s ease}.cc-animate.cc-revoke.cc-top{-webkit-transform:translateY(-2em);transform:translateY(-2em)}.cc-animate.cc-revoke.cc-bottom{-webkit-transform:translateY(2em);transform:translateY(2em)}.cc-animate.cc-revoke.cc-active.cc-top{-webkit-transform:translateY(0);transform:translateY(0)}.cc-animate.cc-revoke.cc-active.cc-bottom{-webkit-transform:translateY(0);transform:translateY(0)}.cc-revoke:hover{-webkit-transform:translateY(0);transform:translateY(0)}.cc-grower{max-height:0;overflow:hidden;-webkit-transition:max-height 1s;transition:max-height 1s}
+.cc-revoke,.cc-window{position:fixed;overflow:hidden;-webkit-box-sizing:border-box;box-sizing:border-box;font-family:Helvetica,Calibri,Arial,sans-serif;font-size:16px;line-height:1.5em;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:nowrap;flex-wrap:nowrap;z-index:9999}.cc-window.cc-static{position:static}.cc-window.cc-floating{padding:2em;max-width:24em;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.cc-window.cc-banner{padding:1em 1.8em;width:100%;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}.cc-revoke{padding:.5em}.cc-revoke:hover{text-decoration:underline}.cc-header{font-size:18px;font-weight:700}.cc-btn,.cc-close,.cc-link,.cc-revoke{cursor:pointer}.cc-link{opacity:.8;display:inline-block;padding:.2em;text-decoration:underline}.cc-link:hover{opacity:1}.cc-link:active,.cc-link:visited{color:initial}.cc-btn{display:block;padding:.4em .8em;font-size:.9em;font-weight:700;border-width:2px;border-style:solid;text-align:center;white-space:nowrap}.cc-highlight .cc-btn:first-child{background-color:transparent;border-color:transparent}.cc-highlight .cc-btn:first-child:focus,.cc-highlight .cc-btn:first-child:hover{background-color:transparent;text-decoration:underline}.cc-close{display:block;position:absolute;top:.5em;right:.5em;font-size:1.6em;opacity:.9;line-height:.75}.cc-close:focus,.cc-close:hover{opacity:1}
+.cc-revoke.cc-top{top:0;left:3em;border-bottom-left-radius:.5em;border-bottom-right-radius:.5em}.cc-revoke.cc-bottom{bottom:0;left:3em;border-top-left-radius:.5em;border-top-right-radius:.5em}.cc-revoke.cc-left{left:3em;right:unset}.cc-revoke.cc-right{right:3em;left:unset}.cc-top{top:1em}.cc-left{left:1em}.cc-right{right:1em}.cc-bottom{bottom:1em}.cc-floating>.cc-link{margin-bottom:1em}.cc-floating .cc-message{display:block;margin-bottom:1em}.cc-window.cc-floating .cc-compliance{-webkit-box-flex:1;-ms-flex:1 0 auto;flex:1 0 auto}.cc-window.cc-banner{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.cc-banner.cc-top{left:0;right:0;top:0}.cc-banner.cc-bottom{left:0;right:0;bottom:0}.cc-banner .cc-message{display:block;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;max-width:100%;margin-right:1em}.cc-compliance{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-line-pack:justify;align-content:space-between}.cc-floating .cc-compliance>.cc-btn{-webkit-box-flex:1;-ms-flex:1;flex:1}.cc-btn+.cc-btn{margin-left:.5em}
+@media print{.cc-revoke,.cc-window{display:none}}@media screen and (max-width:900px){.cc-btn{white-space:normal}}@media screen and (max-width:414px) and (orientation:portrait),screen and (max-width:736px) and (orientation:landscape){.cc-window.cc-top{top:0}.cc-window.cc-bottom{bottom:0}.cc-window.cc-banner,.cc-window.cc-floating,.cc-window.cc-left,.cc-window.cc-right{left:0;right:0}.cc-window.cc-banner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.cc-window.cc-banner .cc-compliance{-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto}.cc-window.cc-floating{max-width:none}.cc-window .cc-message{margin-bottom:1em}.cc-window.cc-banner{-webkit-box-align:unset;-ms-flex-align:unset;align-items:unset}.cc-window.cc-banner .cc-message{margin-right:0}}
+.cc-floating.cc-theme-classic{padding:1.2em;border-radius:5px}.cc-floating.cc-type-info.cc-theme-classic .cc-compliance{text-align:center;display:inline;-webkit-box-flex:0;-ms-flex:none;flex:none}.cc-theme-classic .cc-btn{border-radius:5px}.cc-theme-classic .cc-btn:last-child{min-width:140px}.cc-floating.cc-type-info.cc-theme-classic .cc-btn{display:inline-block}
+.cc-theme-edgeless.cc-window{padding:0}.cc-floating.cc-theme-edgeless .cc-message{margin:2em;margin-bottom:1.5em}.cc-banner.cc-theme-edgeless .cc-btn{margin:0;padding:.8em 1.8em;height:100%}.cc-banner.cc-theme-edgeless .cc-message{margin-left:1em}.cc-floating.cc-theme-edgeless .cc-btn+.cc-btn{margin-left:0}</style><script charset="utf-8" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/vendors_TestView_editor_play_vimeo-8c24568a4bb7477d20fe.bundle.js.download"></script><script charset="utf-8" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/CertificatesView_admin_artisans_clans_courses_editor_i18n_ladder_play_teachers-8ebc3996f477cd445abc.bundle.js.download"></script><script charset="utf-8" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/CertificatesView_admin_artisans_clans_courses_i18n_ladder_play-6126e407ee8bb78a4b69.bundle.js.download"></script><script charset="utf-8" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/admin_artisans_i18n_ladder_play_teachers-323a4141dbca8d3fcabc.bundle.js.download"></script><link rel="stylesheet" type="text/css" href="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/112.css"><script charset="utf-8" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/play-ca54c6e47217b4581706.bundle.js.download"></script><script src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/v3"></script><style></style><script src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/optimize.js.download" async=""></script><script src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/f(1).txt"></script><style type="text/css">/*! jQuery UI - v1.11.1 - 2014-09-20
+* http://jqueryui.com
+* Includes: core.css, datepicker.css, draggable.css, resizable.css, sortable.css, autocomplete.css, menu.css, slider.css, theme.css
+* To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Trebuchet%20MS%2CTahoma%2CVerdana%2CArial%2Csans-serif&fwDefault=bold&fsDefault=1.1em&cornerRadius=4px&bgColorHeader=f6a828&bgTextureHeader=gloss_wave&bgImgOpacityHeader=35&borderColorHeader=e78f08&fcHeader=ffffff&iconColorHeader=ffffff&bgColorContent=eeeeee&bgTextureContent=highlight_soft&bgImgOpacityContent=100&borderColorContent=dddddd&fcContent=333333&iconColorContent=222222&bgColorDefault=f6f6f6&bgTextureDefault=glass&bgImgOpacityDefault=100&borderColorDefault=cccccc&fcDefault=1c94c4&iconColorDefault=ef8c08&bgColorHover=fdf5ce&bgTextureHover=glass&bgImgOpacityHover=100&borderColorHover=fbcb09&fcHover=c77405&iconColorHover=ef8c08&bgColorActive=ffffff&bgTextureActive=glass&bgImgOpacityActive=65&borderColorActive=fbd850&fcActive=eb8f00&iconColorActive=ef8c08&bgColorHighlight=ffe45c&bgTextureHighlight=highlight_soft&bgImgOpacityHighlight=75&borderColorHighlight=fed22f&fcHighlight=363636&iconColorHighlight=228ef1&bgColorError=b81900&bgTextureError=diagonals_thick&bgImgOpacityError=18&borderColorError=cd0a0a&fcError=ffffff&iconColorError=ffd27a&bgColorOverlay=666666&bgTextureOverlay=diagonals_thick&bgImgOpacityOverlay=20&opacityOverlay=50&bgColorShadow=000000&bgTextureShadow=flat&bgImgOpacityShadow=10&opacityShadow=20&thicknessShadow=5px&offsetTopShadow=-5px&offsetLeftShadow=-5px&cornerRadiusShadow=5px
+* Copyright 2014 jQuery Foundation and other contributors; Licensed MIT */
+
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden {
+	display: none;
+}
+.ui-helper-hidden-accessible {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+.ui-helper-reset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	line-height: 1.3;
+	text-decoration: none;
+	font-size: 100%;
+	list-style: none;
+}
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+	content: "";
+	display: table;
+	border-collapse: collapse;
+}
+.ui-helper-clearfix:after {
+	clear: both;
+}
+.ui-helper-clearfix {
+	min-height: 0; /* support: IE7 */
+}
+.ui-helper-zfix {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	opacity: 0;
+	filter:Alpha(Opacity=0); /* support: IE8 */
+}
+
+.ui-front {
+	z-index: 100;
+}
+
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled {
+	cursor: default !important;
+}
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon {
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.ui-datepicker {
+	width: 17em;
+	padding: .2em .2em 0;
+	display: none;
+}
+.ui-datepicker .ui-datepicker-header {
+	position: relative;
+	padding: .2em 0;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+	position: absolute;
+	top: 2px;
+	width: 1.8em;
+	height: 1.8em;
+}
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+	top: 1px;
+}
+.ui-datepicker .ui-datepicker-prev {
+	left: 2px;
+}
+.ui-datepicker .ui-datepicker-next {
+	right: 2px;
+}
+.ui-datepicker .ui-datepicker-prev-hover {
+	left: 1px;
+}
+.ui-datepicker .ui-datepicker-next-hover {
+	right: 1px;
+}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left: -8px;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-datepicker .ui-datepicker-title {
+	margin: 0 2.3em;
+	line-height: 1.8em;
+	text-align: center;
+}
+.ui-datepicker .ui-datepicker-title select {
+	font-size: 1em;
+	margin: 1px 0;
+}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+	width: 45%;
+}
+.ui-datepicker table {
+	width: 100%;
+	font-size: .9em;
+	border-collapse: collapse;
+	margin: 0 0 .4em;
+}
+.ui-datepicker th {
+	padding: .7em .3em;
+	text-align: center;
+	font-weight: bold;
+	border: 0;
+}
+.ui-datepicker td {
+	border: 0;
+	padding: 1px;
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: block;
+	padding: .2em;
+	text-align: right;
+	text-decoration: none;
+}
+.ui-datepicker .ui-datepicker-buttonpane {
+	background-image: none;
+	margin: .7em 0 0 0;
+	padding: 0 .2em;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+}
+.ui-datepicker .ui-datepicker-buttonpane button {
+	float: right;
+	margin: .5em .2em .4em;
+	cursor: pointer;
+	padding: .2em .6em .3em .6em;
+	width: auto;
+	overflow: visible;
+}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+	float: left;
+}
+
+/* with multiple calendars */
+.ui-datepicker.ui-datepicker-multi {
+	width: auto;
+}
+.ui-datepicker-multi .ui-datepicker-group {
+	float: left;
+}
+.ui-datepicker-multi .ui-datepicker-group table {
+	width: 95%;
+	margin: 0 auto .4em;
+}
+.ui-datepicker-multi-2 .ui-datepicker-group {
+	width: 50%;
+}
+.ui-datepicker-multi-3 .ui-datepicker-group {
+	width: 33.3%;
+}
+.ui-datepicker-multi-4 .ui-datepicker-group {
+	width: 25%;
+}
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+	border-left-width: 0;
+}
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+	clear: left;
+}
+.ui-datepicker-row-break {
+	clear: both;
+	width: 100%;
+	font-size: 0;
+}
+
+/* RTL support */
+.ui-datepicker-rtl {
+	direction: rtl;
+}
+.ui-datepicker-rtl .ui-datepicker-prev {
+	right: 2px;
+	left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next {
+	left: 2px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-prev:hover {
+	right: 1px;
+	left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next:hover {
+	left: 1px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane {
+	clear: right;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button {
+	float: left;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
+.ui-datepicker-rtl .ui-datepicker-group {
+	float: right;
+}
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+	border-right-width: 0;
+	border-left-width: 1px;
+}
+
+/* Icons */
+.ui-datepicker .ui-icon {
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	left: .5em;
+	top: .3em;
+}
+
+.ui-draggable-handle {
+	-ms-touch-action: none;
+	touch-action: none;
+}
+.ui-resizable {
+	position: relative;
+}
+.ui-resizable-handle {
+	position: absolute;
+	font-size: 0.1px;
+	display: block;
+	-ms-touch-action: none;
+	touch-action: none;
+}
+.ui-resizable-disabled .ui-resizable-handle,
+.ui-resizable-autohide .ui-resizable-handle {
+	display: none;
+}
+.ui-resizable-n {
+	cursor: n-resize;
+	height: 7px;
+	width: 100%;
+	top: -5px;
+	left: 0;
+}
+.ui-resizable-s {
+	cursor: s-resize;
+	height: 7px;
+	width: 100%;
+	bottom: -5px;
+	left: 0;
+}
+.ui-resizable-e {
+	cursor: e-resize;
+	width: 7px;
+	right: -5px;
+	top: 0;
+	height: 100%;
+}
+.ui-resizable-w {
+	cursor: w-resize;
+	width: 7px;
+	left: -5px;
+	top: 0;
+	height: 100%;
+}
+.ui-resizable-se {
+	cursor: se-resize;
+	width: 12px;
+	height: 12px;
+	right: 1px;
+	bottom: 1px;
+}
+.ui-resizable-sw {
+	cursor: sw-resize;
+	width: 9px;
+	height: 9px;
+	left: -5px;
+	bottom: -5px;
+}
+.ui-resizable-nw {
+	cursor: nw-resize;
+	width: 9px;
+	height: 9px;
+	left: -5px;
+	top: -5px;
+}
+.ui-resizable-ne {
+	cursor: ne-resize;
+	width: 9px;
+	height: 9px;
+	right: -5px;
+	top: -5px;
+}
+.ui-sortable-handle {
+	-ms-touch-action: none;
+	touch-action: none;
+}
+.ui-autocomplete {
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: default;
+}
+.ui-menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: block;
+	outline: none;
+}
+.ui-menu .ui-menu {
+	position: absolute;
+}
+.ui-menu .ui-menu-item {
+	position: relative;
+	margin: 0;
+	padding: 3px 1em 3px .4em;
+	cursor: pointer;
+	min-height: 0; /* support: IE7 */
+	/* support: IE10, see #8844 */
+	list-style-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+}
+.ui-menu .ui-menu-divider {
+	margin: 5px 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	border-width: 1px 0 0 0;
+}
+.ui-menu .ui-state-focus,
+.ui-menu .ui-state-active {
+	margin: -1px;
+}
+
+/* icon support */
+.ui-menu-icons {
+	position: relative;
+}
+.ui-menu-icons .ui-menu-item {
+	padding-left: 2em;
+}
+
+/* left-aligned */
+.ui-menu .ui-icon {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: .2em;
+	margin: auto 0;
+}
+
+/* right-aligned */
+.ui-menu .ui-menu-icon {
+	left: auto;
+	right: 0;
+}
+.ui-slider {
+	position: relative;
+	text-align: left;
+}
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 1.2em;
+	height: 1.2em;
+	cursor: default;
+	-ms-touch-action: none;
+	touch-action: none;
+}
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+	background-position: 0 0;
+}
+
+/* support: IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {
+	filter: inherit;
+}
+
+.ui-slider-horizontal {
+	height: .8em;
+}
+.ui-slider-horizontal .ui-slider-handle {
+	top: -.3em;
+	margin-left: -.6em;
+}
+.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+	left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+	right: 0;
+}
+
+.ui-slider-vertical {
+	width: .8em;
+	height: 100px;
+}
+.ui-slider-vertical .ui-slider-handle {
+	left: -.3em;
+	margin-left: 0;
+	margin-bottom: -.6em;
+}
+.ui-slider-vertical .ui-slider-range {
+	left: 0;
+	width: 100%;
+}
+.ui-slider-vertical .ui-slider-range-min {
+	bottom: 0;
+}
+.ui-slider-vertical .ui-slider-range-max {
+	top: 0;
+}
+
+/* Component containers
+----------------------------------*/
+.ui-widget {
+	font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+	font-size: 1.1em;
+}
+.ui-widget .ui-widget {
+	font-size: 1em;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+	font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+	font-size: 1em;
+}
+.ui-widget-content {
+	border: 1px solid #dddddd;
+	background: #eeeeee url("images/ui-bg_highlight-soft_100_eeeeee_1x100.png") 50% top repeat-x;
+	color: #333333;
+}
+.ui-widget-content a {
+	color: #333333;
+}
+.ui-widget-header {
+	border: 1px solid #e78f08;
+	background: #f6a828 url("images/ui-bg_gloss-wave_35_f6a828_500x100.png") 50% 50% repeat-x;
+	color: #ffffff;
+	font-weight: bold;
+}
+.ui-widget-header a {
+	color: #ffffff;
+}
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	border: 1px solid #cccccc;
+	background: #f6f6f6 url("images/ui-bg_glass_100_f6f6f6_1x400.png") 50% 50% repeat-x;
+	font-weight: bold;
+	color: #1c94c4;
+}
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+	color: #1c94c4;
+	text-decoration: none;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+	border: 1px solid #fbcb09;
+	background: #fdf5ce url("images/ui-bg_glass_100_fdf5ce_1x400.png") 50% 50% repeat-x;
+	font-weight: bold;
+	color: #c77405;
+}
+.ui-state-hover a,
+.ui-state-hover a:hover,
+.ui-state-hover a:link,
+.ui-state-hover a:visited,
+.ui-state-focus a,
+.ui-state-focus a:hover,
+.ui-state-focus a:link,
+.ui-state-focus a:visited {
+	color: #c77405;
+	text-decoration: none;
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+	border: 1px solid #fbd850;
+	background: #ffffff url("images/ui-bg_glass_65_ffffff_1x400.png") 50% 50% repeat-x;
+	font-weight: bold;
+	color: #eb8f00;
+}
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+	color: #eb8f00;
+	text-decoration: none;
+}
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+	border: 1px solid #fed22f;
+	background: #ffe45c url("images/ui-bg_highlight-soft_75_ffe45c_1x100.png") 50% top repeat-x;
+	color: #363636;
+}
+.ui-state-highlight a,
+.ui-widget-content .ui-state-highlight a,
+.ui-widget-header .ui-state-highlight a {
+	color: #363636;
+}
+.ui-state-error,
+.ui-widget-content .ui-state-error,
+.ui-widget-header .ui-state-error {
+	border: 1px solid #cd0a0a;
+	background: #b81900 url("images/ui-bg_diagonals-thick_18_b81900_40x40.png") 50% 50% repeat;
+	color: #ffffff;
+}
+.ui-state-error a,
+.ui-widget-content .ui-state-error a,
+.ui-widget-header .ui-state-error a {
+	color: #ffffff;
+}
+.ui-state-error-text,
+.ui-widget-content .ui-state-error-text,
+.ui-widget-header .ui-state-error-text {
+	color: #ffffff;
+}
+.ui-priority-primary,
+.ui-widget-content .ui-priority-primary,
+.ui-widget-header .ui-priority-primary {
+	font-weight: bold;
+}
+.ui-priority-secondary,
+.ui-widget-content .ui-priority-secondary,
+.ui-widget-header .ui-priority-secondary {
+	opacity: .7;
+	filter:Alpha(Opacity=70); /* support: IE8 */
+	font-weight: normal;
+}
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+	opacity: .35;
+	filter:Alpha(Opacity=35); /* support: IE8 */
+	background-image: none;
+}
+.ui-state-disabled .ui-icon {
+	filter:Alpha(Opacity=35); /* support: IE8 - See #6059 */
+}
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon {
+	width: 16px;
+	height: 16px;
+}
+.ui-icon,
+.ui-widget-content .ui-icon {
+	background-image: url("images/ui-icons_222222_256x240.png");
+}
+.ui-widget-header .ui-icon {
+	background-image: url("images/ui-icons_ffffff_256x240.png");
+}
+.ui-state-default .ui-icon {
+	background-image: url("images/ui-icons_ef8c08_256x240.png");
+}
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon {
+	background-image: url("images/ui-icons_ef8c08_256x240.png");
+}
+.ui-state-active .ui-icon {
+	background-image: url("images/ui-icons_ef8c08_256x240.png");
+}
+.ui-state-highlight .ui-icon {
+	background-image: url("images/ui-icons_228ef1_256x240.png");
+}
+.ui-state-error .ui-icon,
+.ui-state-error-text .ui-icon {
+	background-image: url("images/ui-icons_ffd27a_256x240.png");
+}
+
+/* positioning */
+.ui-icon-blank { background-position: 16px 16px; }
+.ui-icon-carat-1-n { background-position: 0 0; }
+.ui-icon-carat-1-ne { background-position: -16px 0; }
+.ui-icon-carat-1-e { background-position: -32px 0; }
+.ui-icon-carat-1-se { background-position: -48px 0; }
+.ui-icon-carat-1-s { background-position: -64px 0; }
+.ui-icon-carat-1-sw { background-position: -80px 0; }
+.ui-icon-carat-1-w { background-position: -96px 0; }
+.ui-icon-carat-1-nw { background-position: -112px 0; }
+.ui-icon-carat-2-n-s { background-position: -128px 0; }
+.ui-icon-carat-2-e-w { background-position: -144px 0; }
+.ui-icon-triangle-1-n { background-position: 0 -16px; }
+.ui-icon-triangle-1-ne { background-position: -16px -16px; }
+.ui-icon-triangle-1-e { background-position: -32px -16px; }
+.ui-icon-triangle-1-se { background-position: -48px -16px; }
+.ui-icon-triangle-1-s { background-position: -64px -16px; }
+.ui-icon-triangle-1-sw { background-position: -80px -16px; }
+.ui-icon-triangle-1-w { background-position: -96px -16px; }
+.ui-icon-triangle-1-nw { background-position: -112px -16px; }
+.ui-icon-triangle-2-n-s { background-position: -128px -16px; }
+.ui-icon-triangle-2-e-w { background-position: -144px -16px; }
+.ui-icon-arrow-1-n { background-position: 0 -32px; }
+.ui-icon-arrow-1-ne { background-position: -16px -32px; }
+.ui-icon-arrow-1-e { background-position: -32px -32px; }
+.ui-icon-arrow-1-se { background-position: -48px -32px; }
+.ui-icon-arrow-1-s { background-position: -64px -32px; }
+.ui-icon-arrow-1-sw { background-position: -80px -32px; }
+.ui-icon-arrow-1-w { background-position: -96px -32px; }
+.ui-icon-arrow-1-nw { background-position: -112px -32px; }
+.ui-icon-arrow-2-n-s { background-position: -128px -32px; }
+.ui-icon-arrow-2-ne-sw { background-position: -144px -32px; }
+.ui-icon-arrow-2-e-w { background-position: -160px -32px; }
+.ui-icon-arrow-2-se-nw { background-position: -176px -32px; }
+.ui-icon-arrowstop-1-n { background-position: -192px -32px; }
+.ui-icon-arrowstop-1-e { background-position: -208px -32px; }
+.ui-icon-arrowstop-1-s { background-position: -224px -32px; }
+.ui-icon-arrowstop-1-w { background-position: -240px -32px; }
+.ui-icon-arrowthick-1-n { background-position: 0 -48px; }
+.ui-icon-arrowthick-1-ne { background-position: -16px -48px; }
+.ui-icon-arrowthick-1-e { background-position: -32px -48px; }
+.ui-icon-arrowthick-1-se { background-position: -48px -48px; }
+.ui-icon-arrowthick-1-s { background-position: -64px -48px; }
+.ui-icon-arrowthick-1-sw { background-position: -80px -48px; }
+.ui-icon-arrowthick-1-w { background-position: -96px -48px; }
+.ui-icon-arrowthick-1-nw { background-position: -112px -48px; }
+.ui-icon-arrowthick-2-n-s { background-position: -128px -48px; }
+.ui-icon-arrowthick-2-ne-sw { background-position: -144px -48px; }
+.ui-icon-arrowthick-2-e-w { background-position: -160px -48px; }
+.ui-icon-arrowthick-2-se-nw { background-position: -176px -48px; }
+.ui-icon-arrowthickstop-1-n { background-position: -192px -48px; }
+.ui-icon-arrowthickstop-1-e { background-position: -208px -48px; }
+.ui-icon-arrowthickstop-1-s { background-position: -224px -48px; }
+.ui-icon-arrowthickstop-1-w { background-position: -240px -48px; }
+.ui-icon-arrowreturnthick-1-w { background-position: 0 -64px; }
+.ui-icon-arrowreturnthick-1-n { background-position: -16px -64px; }
+.ui-icon-arrowreturnthick-1-e { background-position: -32px -64px; }
+.ui-icon-arrowreturnthick-1-s { background-position: -48px -64px; }
+.ui-icon-arrowreturn-1-w { background-position: -64px -64px; }
+.ui-icon-arrowreturn-1-n { background-position: -80px -64px; }
+.ui-icon-arrowreturn-1-e { background-position: -96px -64px; }
+.ui-icon-arrowreturn-1-s { background-position: -112px -64px; }
+.ui-icon-arrowrefresh-1-w { background-position: -128px -64px; }
+.ui-icon-arrowrefresh-1-n { background-position: -144px -64px; }
+.ui-icon-arrowrefresh-1-e { background-position: -160px -64px; }
+.ui-icon-arrowrefresh-1-s { background-position: -176px -64px; }
+.ui-icon-arrow-4 { background-position: 0 -80px; }
+.ui-icon-arrow-4-diag { background-position: -16px -80px; }
+.ui-icon-extlink { background-position: -32px -80px; }
+.ui-icon-newwin { background-position: -48px -80px; }
+.ui-icon-refresh { background-position: -64px -80px; }
+.ui-icon-shuffle { background-position: -80px -80px; }
+.ui-icon-transfer-e-w { background-position: -96px -80px; }
+.ui-icon-transferthick-e-w { background-position: -112px -80px; }
+.ui-icon-folder-collapsed { background-position: 0 -96px; }
+.ui-icon-folder-open { background-position: -16px -96px; }
+.ui-icon-document { background-position: -32px -96px; }
+.ui-icon-document-b { background-position: -48px -96px; }
+.ui-icon-note { background-position: -64px -96px; }
+.ui-icon-mail-closed { background-position: -80px -96px; }
+.ui-icon-mail-open { background-position: -96px -96px; }
+.ui-icon-suitcase { background-position: -112px -96px; }
+.ui-icon-comment { background-position: -128px -96px; }
+.ui-icon-person { background-position: -144px -96px; }
+.ui-icon-print { background-position: -160px -96px; }
+.ui-icon-trash { background-position: -176px -96px; }
+.ui-icon-locked { background-position: -192px -96px; }
+.ui-icon-unlocked { background-position: -208px -96px; }
+.ui-icon-bookmark { background-position: -224px -96px; }
+.ui-icon-tag { background-position: -240px -96px; }
+.ui-icon-home { background-position: 0 -112px; }
+.ui-icon-flag { background-position: -16px -112px; }
+.ui-icon-calendar { background-position: -32px -112px; }
+.ui-icon-cart { background-position: -48px -112px; }
+.ui-icon-pencil { background-position: -64px -112px; }
+.ui-icon-clock { background-position: -80px -112px; }
+.ui-icon-disk { background-position: -96px -112px; }
+.ui-icon-calculator { background-position: -112px -112px; }
+.ui-icon-zoomin { background-position: -128px -112px; }
+.ui-icon-zoomout { background-position: -144px -112px; }
+.ui-icon-search { background-position: -160px -112px; }
+.ui-icon-wrench { background-position: -176px -112px; }
+.ui-icon-gear { background-position: -192px -112px; }
+.ui-icon-heart { background-position: -208px -112px; }
+.ui-icon-star { background-position: -224px -112px; }
+.ui-icon-link { background-position: -240px -112px; }
+.ui-icon-cancel { background-position: 0 -128px; }
+.ui-icon-plus { background-position: -16px -128px; }
+.ui-icon-plusthick { background-position: -32px -128px; }
+.ui-icon-minus { background-position: -48px -128px; }
+.ui-icon-minusthick { background-position: -64px -128px; }
+.ui-icon-close { background-position: -80px -128px; }
+.ui-icon-closethick { background-position: -96px -128px; }
+.ui-icon-key { background-position: -112px -128px; }
+.ui-icon-lightbulb { background-position: -128px -128px; }
+.ui-icon-scissors { background-position: -144px -128px; }
+.ui-icon-clipboard { background-position: -160px -128px; }
+.ui-icon-copy { background-position: -176px -128px; }
+.ui-icon-contact { background-position: -192px -128px; }
+.ui-icon-image { background-position: -208px -128px; }
+.ui-icon-video { background-position: -224px -128px; }
+.ui-icon-script { background-position: -240px -128px; }
+.ui-icon-alert { background-position: 0 -144px; }
+.ui-icon-info { background-position: -16px -144px; }
+.ui-icon-notice { background-position: -32px -144px; }
+.ui-icon-help { background-position: -48px -144px; }
+.ui-icon-check { background-position: -64px -144px; }
+.ui-icon-bullet { background-position: -80px -144px; }
+.ui-icon-radio-on { background-position: -96px -144px; }
+.ui-icon-radio-off { background-position: -112px -144px; }
+.ui-icon-pin-w { background-position: -128px -144px; }
+.ui-icon-pin-s { background-position: -144px -144px; }
+.ui-icon-play { background-position: 0 -160px; }
+.ui-icon-pause { background-position: -16px -160px; }
+.ui-icon-seek-next { background-position: -32px -160px; }
+.ui-icon-seek-prev { background-position: -48px -160px; }
+.ui-icon-seek-end { background-position: -64px -160px; }
+.ui-icon-seek-start { background-position: -80px -160px; }
+/* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
+.ui-icon-seek-first { background-position: -80px -160px; }
+.ui-icon-stop { background-position: -96px -160px; }
+.ui-icon-eject { background-position: -112px -160px; }
+.ui-icon-volume-off { background-position: -128px -160px; }
+.ui-icon-volume-on { background-position: -144px -160px; }
+.ui-icon-power { background-position: 0 -176px; }
+.ui-icon-signal-diag { background-position: -16px -176px; }
+.ui-icon-signal { background-position: -32px -176px; }
+.ui-icon-battery-0 { background-position: -48px -176px; }
+.ui-icon-battery-1 { background-position: -64px -176px; }
+.ui-icon-battery-2 { background-position: -80px -176px; }
+.ui-icon-battery-3 { background-position: -96px -176px; }
+.ui-icon-circle-plus { background-position: 0 -192px; }
+.ui-icon-circle-minus { background-position: -16px -192px; }
+.ui-icon-circle-close { background-position: -32px -192px; }
+.ui-icon-circle-triangle-e { background-position: -48px -192px; }
+.ui-icon-circle-triangle-s { background-position: -64px -192px; }
+.ui-icon-circle-triangle-w { background-position: -80px -192px; }
+.ui-icon-circle-triangle-n { background-position: -96px -192px; }
+.ui-icon-circle-arrow-e { background-position: -112px -192px; }
+.ui-icon-circle-arrow-s { background-position: -128px -192px; }
+.ui-icon-circle-arrow-w { background-position: -144px -192px; }
+.ui-icon-circle-arrow-n { background-position: -160px -192px; }
+.ui-icon-circle-zoomin { background-position: -176px -192px; }
+.ui-icon-circle-zoomout { background-position: -192px -192px; }
+.ui-icon-circle-check { background-position: -208px -192px; }
+.ui-icon-circlesmall-plus { background-position: 0 -208px; }
+.ui-icon-circlesmall-minus { background-position: -16px -208px; }
+.ui-icon-circlesmall-close { background-position: -32px -208px; }
+.ui-icon-squaresmall-plus { background-position: -48px -208px; }
+.ui-icon-squaresmall-minus { background-position: -64px -208px; }
+.ui-icon-squaresmall-close { background-position: -80px -208px; }
+.ui-icon-grip-dotted-vertical { background-position: 0 -224px; }
+.ui-icon-grip-dotted-horizontal { background-position: -16px -224px; }
+.ui-icon-grip-solid-vertical { background-position: -32px -224px; }
+.ui-icon-grip-solid-horizontal { background-position: -48px -224px; }
+.ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
+.ui-icon-grip-diagonal-se { background-position: -80px -224px; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+	border-top-left-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+	border-top-right-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+	border-bottom-left-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+	border-bottom-right-radius: 4px;
+}
+
+/* Overlays */
+.ui-widget-overlay {
+	background: #666666 url("images/ui-bg_diagonals-thick_20_666666_40x40.png") 50% 50% repeat;
+	opacity: .5;
+	filter: Alpha(Opacity=50); /* support: IE8 */
+}
+.ui-widget-shadow {
+	margin: -5px 0 0 -5px;
+	padding: 5px;
+	background: #000000 url("images/ui-bg_flat_10_000000_40x100.png") 50% 50% repeat-x;
+	opacity: .2;
+	filter: Alpha(Opacity=20); /* support: IE8 */
+	border-radius: 5px;
+}
+</style><meta data-vmid="meta-description" name="description" content="Learn programming with a coding game for beginners. Learn Python or JavaScript as you solve mazes, make your own games, and level up. Challenge your friends in multiplayer arena levels!" data-vue-meta="true"><link data-vmid="rel-canonical" rel="canonical" content="/play" data-vue-meta="true"></head><body class="clearfix" onload="onLoad();" lang="en-US"><div class="cc-revoke cc-bottom cc-animate cc-color-override-688238583" style="display: none;">Cookie Policy</div><div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-banner cc-type-opt-out cc-theme-block cc-bottom cc-color-override-688238583 " style=""><!--googleoff: all--><span id="cookieconsent:desc" class="cc-message">CodeCombat uses a few essential and non-essential cookies. <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="https://codecombat.com/privacy" rel="noopener noreferrer nofollow" target="_blank">Privacy Notice</a></span><div class="cc-compliance cc-highlight"><a aria-label="deny cookies" role="button" tabindex="0" class="cc-btn cc-deny">Decline non-essential cookies</a><a aria-label="allow cookies" role="button" tabindex="0" class="cc-btn cc-allow">Allow cookies</a></div><!--googleon: all--></div><div id="fb-root"></div><div id="page-container"><div id="campaign-view" style="background-color: rgb(68, 54, 45);"><!-- TODO: .gameplay-container causes world map buttons to briefly appear in top left of screen--><div class="gameplay-container"><a class="picoctf-hide" href="https://codecombat.com/"><img class="small-nav-logo" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/logo.png" title="CodeCombat - Learn how to code by playing a game" alt="CodeCombat"></a><div class="picoctf-show"><a class="picoctf-logo" href="http://staging.picoctf.com/"><img class="small-nav-logo" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/picoctf-logo-white.png" title="picoCTF home" alt="picoCTF home"></a><a class="picoctf-powered-by" href="http://codecombat.com/"><em class="spr">powered by</em><img src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/logo.png" title="Powered by CodeCombat - Learn how to code by playing a game " alt="Powered by CodeCombat"></a></div><div class="under-logo button-container"></div><div class="modal-content style-flat" id="anonymous-classroom-signup-dialog"><div class="modal-header"><span class="glyphicon glyphicon-remove button close" id="anon-classroom-signup-close"></span><h4><div data-i18n="play.anon_signup_title_1">CodeCombat has a</div><div data-i18n="play.anon_signup_title_2">Classroom Version!</div></h4></div><div class="modal-body"><div class="strong" data-i18n="play.anon_signup_enter_code">Enter Class Code:</div><div data-i18n="play.anon_signup_ask_teacher">Don't have one? Ask your teacher!</div><div><span><input id="anon-classroom-signup-code" type="text"></span><span><button class="btn btn-sm btn-navy" id="anon-classroom-join-btn" data-i18n="courses.join">Join</button></span></div><div class="strong" data-i18n="play.anon_signup_create_class">Want to create a class?</div><div data-i18n="play.anon_signup_setup_class">Set up a class, add your students, and monitor progress!</div><button class="btn btn-sm btn-navy" id="anon-classroom-signup-btn" data-i18n="play.anon_signup_create_teacher">Create free teacher account</button></div></div><div class="map" style="width: 1300.46px; height: 850px; margin-left: 49.7721px; margin-top: 0px;"><div class="gradient horizontal-gradient top-gradient" style="background-image: linear-gradient(to top, rgba(68, 54, 45, 0) 0%, rgb(68, 54, 45) 100%);"></div><div class="gradient vertical-gradient right-gradient" style="background-image: linear-gradient(to right, rgba(68, 54, 45, 0) 0%, rgb(68, 54, 45) 100%);"></div><div class="gradient horizontal-gradient bottom-gradient" style="background-image: linear-gradient(rgba(68, 54, 45, 0) 0%, rgb(68, 54, 45) 100%);"></div><div class="gradient vertical-gradient left-gradient" style="background-image: linear-gradient(to left, rgba(68, 54, 45, 0) 0%, rgb(68, 54, 45) 100%);"></div><div class="map-background" alt="" draggable="false"></div><div class="level locked  has-tooltip" style="left: 93.91206187410587%; bottom: 88.52806174781182%; background-color: rgb(193, 193, 193)" data-level-slug="twisted-canyon" data-level-original="5a5ef999d3c5710020113f2c" title="" data-original-title="Twisted Canyon"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="twisted-canyon" data-level-path="level" data-level-name="Twisted Canyon"></a></div><div class="level-shadow locked " style="left: 93.91206187410587%; bottom: 88.52806174781182%"></div><div class="level-info-container rtl-allowed" data-level-slug="twisted-canyon" data-level-path="level" data-level-name="Twisted Canyon" data-level-original="5a5ef999d3c5710020113f2c"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed  premium"><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Twisted Canyon (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Challenge: collect the most gold using all the programming skills you've learned so far!</p>
+</div><p><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.while_loops_simple">While Loops</kbd><kbd data-i18n="concepts.strings">Strings</kbd><kbd data-i18n="concepts.variables">Variables</kbd><kbd data-i18n="concepts.reading_docs">Reading the Docs</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 57.37607244995233%; bottom: 83.04311680029156%; background-color: rgb(193, 193, 193)" data-level-slug="known-enemy" data-level-original="5452adea57e83800009730ee" title="" data-original-title="Known Enemy"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="known-enemy" data-level-path="level" data-level-name="Known Enemy"></a><img class="treasure-chest" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/bronze-chest.png"></div><div class="level-shadow locked " style="left: 57.37607244995233%; bottom: 83.04311680029156%"></div><div class="level-info-container rtl-allowed" data-level-slug="known-enemy" data-level-path="level" data-level-name="Known Enemy" data-level-original="5452adea57e83800009730ee"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed "><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Known Enemy (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Using your first variable to achieve victory.</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.strings">Strings</kbd><kbd data-i18n="concepts.variables">Variables</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 40.534139656816016%; bottom: 82.59668822886297%; background-color: rgb(193, 193, 193)" data-level-slug="hack-and-dash" data-level-original="54e8e4047578d754057f852b" title="" data-original-title="Hack and Dash"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="hack-and-dash" data-level-path="level" data-level-name="Hack and Dash"></a></div><div class="level-shadow locked " style="left: 40.534139656816016%; bottom: 82.59668822886297%"></div><div class="level-info-container rtl-allowed" data-level-slug="hack-and-dash" data-level-path="level" data-level-name="Hack and Dash" data-level-original="54e8e4047578d754057f852b"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed "><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Hack and Dash (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Escape the Dungeon Sprite with the help of a speed potion.</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.strings">Strings</kbd><kbd data-i18n="concepts.while_loops_simple">While Loops</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 34.35414680648237%; bottom: 81.01824435131195%; background-color: rgb(193, 193, 193)" data-level-slug="dread-door" data-level-original="5418d40f4c16460000ab9ac2" title="" data-original-title="Dread Door"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="dread-door" data-level-path="level" data-level-name="Dread Door"></a><img class="treasure-chest" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/bronze-chest.png"></div><div class="level-shadow locked " style="left: 34.35414680648237%; bottom: 81.01824435131195%"></div><div class="level-info-container rtl-allowed" data-level-slug="dread-door" data-level-path="level" data-level-name="Dread Door" data-level-original="5418d40f4c16460000ab9ac2"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed "><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Dread Door (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Behind a dread door lies a chest full of riches.</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.strings">Strings</kbd><kbd data-i18n="concepts.while_loops_simple">While Loops</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 73.78102836879432%; bottom: 80.29495774207011%; background-color: rgb(193, 193, 193)" data-level-slug="master-of-names" data-level-original="5452c3ce57e83800009730f7" title="" data-original-title="Master of Names"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="master-of-names" data-level-path="level" data-level-name="Master of Names"></a><img class="treasure-chest" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/bronze-chest.png"></div><div class="level-shadow locked " style="left: 73.78102836879432%; bottom: 80.29495774207011%"></div><div class="level-info-container rtl-allowed" data-level-slug="master-of-names" data-level-path="level" data-level-name="Master of Names" data-level-original="5452c3ce57e83800009730f7"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed "><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Master of Names (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Use your new coding powers to target nameless enemies.</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.variables">Variables</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 28.893589132507145%; bottom: 80.00694697521867%; background-color: rgb(193, 193, 193)" data-level-slug="pong-pong" data-level-original="5a5f6fe6dfafb6002b2b5b36" title="" data-original-title="Pong Pong"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="pong-pong" data-level-path="level" data-level-name="Pong Pong"></a></div><div class="level-shadow locked " style="left: 28.893589132507145%; bottom: 80.00694697521867%"></div><div class="level-info-container rtl-allowed" data-level-slug="pong-pong" data-level-path="level" data-level-name="Pong Pong" data-level-original="5a5f6fe6dfafb6002b2b5b36"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed  premium"><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Pong Pong (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Challenge: write the shortest solution using all the programming skills you've learned so far!</p>
+</div><p><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.reading_docs">Reading the Docs</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 80.71355174081238%; bottom: 79.42544609837279%; background-color: rgb(193, 193, 193)" data-level-slug="ingredient-identification" data-level-original="5b119d7bae14470041bc9d0c" title="" data-original-title="Ingredient Identification"><a href="https://codecombat.com/play/level/ingredient-identification" data-level-slug="ingredient-identification" data-level-path="level" data-level-name="Ingredient Identification"></a></div><div class="level-shadow locked " style="left: 80.71355174081238%; bottom: 79.42544609837279%"></div><div class="level-info-container rtl-allowed" data-level-slug="ingredient-identification" data-level-path="level" data-level-name="Ingredient Identification" data-level-original="5b119d7bae14470041bc9d0c"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed  premium"><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Ingredient Identification (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Variables are like labeled bottles that hold data.</p>
+</div><p><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.variables">Variables</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 46.35218064823641%; bottom: 75.47660805393586%; background-color: rgb(193, 193, 193)" data-level-slug="cupboards-of-kithgard" data-level-original="54e0cdefe308cb510555a7f5" title="" data-original-title="Cupboards of Kithgard"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="cupboards-of-kithgard" data-level-path="level" data-level-name="Cupboards of Kithgard"></a></div><div class="level-shadow locked " style="left: 46.35218064823641%; bottom: 75.47660805393586%"></div><div class="level-info-container rtl-allowed" data-level-slug="cupboards-of-kithgard" data-level-path="level" data-level-name="Cupboards of Kithgard" data-level-original="54e0cdefe308cb510555a7f5"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed "><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Cupboards of Kithgard (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Who knows what horrors lurk in the Cupboards of Kithgard?</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.strings">Strings</kbd><kbd data-i18n="concepts.while_loops_simple">While Loops</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 69.741373431533%; bottom: 72.87634338480802%; background-color: rgb(193, 193, 193)" data-level-slug="closing-the-distance" data-level-original="541b288e1ccc8eaae19f3c25" title="" data-original-title="Closing the Distance (practice)"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="closing-the-distance" data-level-path="level" data-level-name="Closing the Distance"></a><img class="treasure-chest" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/silver-chest.png"></div><div class="level-shadow locked " style="left: 69.741373431533%; bottom: 72.87634338480802%"></div><div class="level-info-container rtl-allowed" data-level-slug="closing-the-distance" data-level-path="level" data-level-name="Closing the Distance" data-level-original="541b288e1ccc8eaae19f3c25"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed  premium"><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Closing the Distance (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Some enemies will require different battle tactics.</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.variables">Variables</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 42.878634413727355%; bottom: 72.32427569241983%; background-color: rgb(193, 193, 193)" data-level-slug="breakout" data-level-original="54f0e074a375e47f055d619c" title="" data-original-title="Breakout"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="breakout" data-level-path="level" data-level-name="Breakout"></a></div><div class="level-shadow locked " style="left: 42.878634413727355%; bottom: 72.32427569241983%"></div><div class="level-info-container rtl-allowed" data-level-slug="breakout" data-level-path="level" data-level-name="Breakout" data-level-original="54f0e074a375e47f055d619c"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed  premium"><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Breakout (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Munchkins are chasing you, and the way ahead is blocked!</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.strings">Strings</kbd><kbd data-i18n="concepts.while_loops_simple">While Loops</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 61.466277407054335%; bottom: 72.03956359329446%; background-color: rgb(193, 193, 193)" data-level-slug="a-mayhem-of-munchkins" data-level-original="55ca29439bc1892c835b0137" title="" data-original-title="A Mayhem of Munchkins"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="a-mayhem-of-munchkins" data-level-path="level" data-level-name="A Mayhem of Munchkins"></a></div><div class="level-shadow locked " style="left: 61.466277407054335%; bottom: 72.03956359329446%"></div><div class="level-info-container rtl-allowed" data-level-slug="a-mayhem-of-munchkins" data-level-path="level" data-level-name="A Mayhem of Munchkins" data-level-original="55ca29439bc1892c835b0137"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed  premium"><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">A Mayhem of Munchkins (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Survive a neverending stream of ogres with mentorship from two experienced heroes!</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.variables">Variables</kbd><kbd data-i18n="concepts.while_loops_simple">While Loops</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 23.26786688488816%; bottom: 71.59034588898163%; background-color: rgb(193, 193, 193)" data-level-slug="radiant-aura" data-level-original="54d24c49bf87255405a8f834" title="" data-original-title="Radiant Aura (practice)"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="radiant-aura" data-level-path="level" data-level-name="Radiant Aura"></a><img class="treasure-chest" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/silver-chest.png"></div><div class="level-shadow locked " style="left: 23.26786688488816%; bottom: 71.59034588898163%"></div><div class="level-info-container rtl-allowed" data-level-slug="radiant-aura" data-level-path="level" data-level-name="Radiant Aura" data-level-original="54d24c49bf87255405a8f834"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed  premium"><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Radiant Aura (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Skeletons. Fearsome, or fearful?</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.while_loops_simple">While Loops</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 75.29617988394584%; bottom: 70.23998012204143%; background-color: rgb(193, 193, 193)" data-level-slug="lowly-kithmen" data-level-original="541b24511ccc8eaae19f3c1f" title="" data-original-title="Lowly Kithmen (practice)"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="lowly-kithmen" data-level-path="level" data-level-name="Lowly Kithmen"></a><img class="treasure-chest" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/silver-chest.png"></div><div class="level-shadow locked " style="left: 75.29617988394584%; bottom: 70.23998012204143%"></div><div class="level-info-container rtl-allowed" data-level-slug="lowly-kithmen" data-level-path="level" data-level-name="Lowly Kithmen" data-level-original="541b24511ccc8eaae19f3c1f"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed  premium"><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Lowly Kithmen (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Use your glasses to seek out and attack the Kithmen.</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.variables">Variables</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 71.77952809601746%; bottom: 65.41338428631052%; background-color: rgb(193, 193, 193)" data-level-slug="tactical-strike" data-level-original="5452cfa706a59e000067e4f5" title="" data-original-title="Tactical Strike"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="tactical-strike" data-level-path="level" data-level-name="Tactical Strike"></a></div><div class="level-shadow locked " style="left: 71.77952809601746%; bottom: 65.41338428631052%"></div><div class="level-info-container rtl-allowed" data-level-slug="tactical-strike" data-level-path="level" data-level-name="Tactical Strike" data-level-original="5452cfa706a59e000067e4f5"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed  premium"><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Tactical Strike (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Learn some warrior tactics.</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.variables">Variables</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 34.839728312678744%; bottom: 64.55277423469387%; background-color: rgb(193, 193, 193)" data-level-slug="descending-further" data-level-original="5452a84d57e83800009730e4" title="" data-original-title="Descending Further"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="descending-further" data-level-path="level" data-level-name="Descending Further"></a></div><div class="level-shadow locked " style="left: 34.839728312678744%; bottom: 64.55277423469387%"></div><div class="level-info-container rtl-allowed" data-level-slug="descending-further" data-level-path="level" data-level-name="Descending Further" data-level-original="5452a84d57e83800009730e4"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed "><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Descending Further (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Use a loop to navigate efficiently.</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.while_loops_simple">While Loops</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 25.510903241182074%; bottom: 62.539290269679306%; background-color: rgb(193, 193, 193)" data-level-slug="the-second-kithmaze" data-level-original="5418cf256bae62f707c7e1c3" title="" data-original-title="The Second Kithmaze"><img class="hero-portrait" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/portrait.png"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="the-second-kithmaze" data-level-path="level" data-level-name="The Second Kithmaze"></a><img class="treasure-chest" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/gold-chest.png"></div><div class="level-shadow locked " style="left: 25.510903241182074%; bottom: 62.539290269679306%"></div><div class="level-info-container rtl-allowed" data-level-slug="the-second-kithmaze" data-level-path="level" data-level-name="The Second Kithmaze" data-level-original="5418cf256bae62f707c7e1c3"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed  premium"><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">The Second Kithmaze (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Many have tried, few have found their way through this maze.</p>
+</div><p><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.while_loops_simple">While Loops</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 79.20638703527169%; bottom: 61.452828899416915%; background-color: rgb(193, 193, 193)" data-level-slug="the-final-kithmaze" data-level-original="541b434e1ccc8eaae19f3c33" title="" data-original-title="The Final Kithmaze"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="the-final-kithmaze" data-level-path="level" data-level-name="The Final Kithmaze"></a><img class="treasure-chest" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/bronze-chest.png"></div><div class="level-shadow locked " style="left: 79.20638703527169%; bottom: 61.452828899416915%"></div><div class="level-info-container rtl-allowed" data-level-slug="the-final-kithmaze" data-level-path="level" data-level-name="The Final Kithmaze" data-level-original="541b434e1ccc8eaae19f3c33"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed "><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">The Final Kithmaze (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>To escape you must find your way through an elder Kithman's maze.</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.variables">Variables</kbd><kbd data-i18n="concepts.while_loops_simple">While Loops</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 39.778956148713064%; bottom: 61.22050382653062%; background-color: rgb(193, 193, 193)" data-level-slug="haunted-kithmaze" data-level-original="545a5914d820eb0000f6dc0a" title="" data-original-title="Haunted Kithmaze"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="haunted-kithmaze" data-level-path="level" data-level-name="Haunted Kithmaze"></a></div><div class="level-shadow locked " style="left: 39.778956148713064%; bottom: 61.22050382653062%"></div><div class="level-info-container rtl-allowed" data-level-slug="haunted-kithmaze" data-level-path="level" data-level-name="Haunted Kithmaze" data-level-original="545a5914d820eb0000f6dc0a"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed "><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Haunted Kithmaze (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>A maze constructed to confuse travelers.</p>
+</div><p><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.while_loops_simple">While Loops</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 68.05100927441353%; bottom: 54.7380399624374%; background-color: rgb(193, 193, 193)" data-level-slug="the-skeleton" data-level-original="558c3967fa305a734ad31df3" title="" data-original-title="The Skeleton (practice)"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="the-skeleton" data-level-path="level" data-level-name="The Skeleton"></a></div><div class="level-shadow locked " style="left: 68.05100927441353%; bottom: 54.7380399624374%"></div><div class="level-info-container rtl-allowed" data-level-slug="the-skeleton" data-level-path="level" data-level-name="The Skeleton" data-level-original="558c3967fa305a734ad31df3"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed  premium"><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">The Skeleton (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>A giant skeleton! Its sword is very blunt, but very heavy.</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.strings">Strings</kbd><kbd data-i18n="concepts.while_loops_simple">While Loops</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 91.4342374616172%; bottom: 54.55301251956182%; background-color: rgb(193, 193, 193)" data-level-slug="kithgard-gates" data-level-original="541c9a30c6362edfb0f34479" title="" data-original-title="Kithgard Gates"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="kithgard-gates" data-level-path="level" data-level-name="Kithgard Gates"></a></div><div class="level-shadow locked " style="left: 91.4342374616172%; bottom: 54.55301251956182%"></div><div class="level-info-container rtl-allowed" data-level-slug="kithgard-gates" data-level-path="level" data-level-name="Kithgard Gates" data-level-original="541c9a30c6362edfb0f34479"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed "><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Kithgard Gates (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Escape the Kithgard dungeons, and don't let the guardians get you.</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.strings">Strings</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 23.096528914348063%; bottom: 52.72948403589315%; background-color: rgb(193, 193, 193)" data-level-slug="riddling-kithmaze" data-level-original="5418b9d64c16460000ab9ab4" title="" data-original-title="Riddling Kithmaze (practice)"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="riddling-kithmaze" data-level-path="level" data-level-name="Riddling Kithmaze"></a></div><div class="level-shadow locked " style="left: 23.096528914348063%; bottom: 52.72948403589315%"></div><div class="level-info-container rtl-allowed" data-level-slug="riddling-kithmaze" data-level-path="level" data-level-name="Riddling Kithmaze" data-level-original="5418b9d64c16460000ab9ab4"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed  premium"><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Riddling Kithmaze (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>If at first you go astray, change your loop to find the way.</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.while_loops_simple">While Loops</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 50.271924440807425%; bottom: 47.834607157762946%; background-color: rgb(193, 193, 193)" data-level-slug="loop-da-loop" data-level-original="565ce2291b940587057366dd" title="" data-original-title="Loop Da Loop"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="loop-da-loop" data-level-path="level" data-level-name="Loop Da Loop"></a><img class="treasure-chest" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/silver-chest.png"></div><div class="level-shadow locked " style="left: 50.271924440807425%; bottom: 47.834607157762946%"></div><div class="level-info-container rtl-allowed" data-level-slug="loop-da-loop" data-level-path="level" data-level-name="Loop Da Loop" data-level-original="565ce2291b940587057366dd"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed  premium"><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Loop Da Loop (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Loops are a life saver!</p>
+</div><p><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.while_loops_simple">While Loops</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 38.166598472449536%; bottom: 47.739396389816356%; background-color: rgb(193, 193, 193)" data-level-slug="lost-in-the-stacks" data-level-original="577bd1aad2429735002ec11e" title="" data-original-title="Lost in the Stacks"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="lost-in-the-stacks" data-level-path="level" data-level-name="Lost in the Stacks"></a></div><div class="level-shadow locked " style="left: 38.166598472449536%; bottom: 47.739396389816356%"></div><div class="level-info-container rtl-allowed" data-level-slug="lost-in-the-stacks" data-level-path="level" data-level-name="Lost in the Stacks" data-level-original="577bd1aad2429735002ec11e"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed  premium"><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Lost in the Stacks (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Use code blocks to find your way out of the library.</p>
+</div><p><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.while_loops_simple">While Loops</kbd><kbd data-i18n="concepts.reading_docs">Reading the Docs</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 58.021344789961816%; bottom: 47.63244730801336%; background-color: rgb(193, 193, 193)" data-level-slug="fire-dancing" data-level-original="55ca293b9bc1892c835b0136" title="" data-original-title="Fire Dancing"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="fire-dancing" data-level-path="level" data-level-name="Fire Dancing"></a><img class="treasure-chest" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/bronze-chest.png"></div><div class="level-shadow locked " style="left: 58.021344789961816%; bottom: 47.63244730801336%"></div><div class="level-info-container rtl-allowed" data-level-slug="fire-dancing" data-level-path="level" data-level-name="Fire Dancing" data-level-original="55ca293b9bc1892c835b0136"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed "><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Fire Dancing (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Save typing (and your hero) with loops!</p>
+</div><p><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.while_loops_simple">While Loops</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 75.18739442567568%; bottom: 47.40315124354005%; background-color: rgb(193, 193, 193)" data-level-slug="dungeon-raider" data-level-original="60e4f2482356c40019afdf7e" title="" data-original-title="Dungeon Raider"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="dungeon-raider" data-level-path="level" data-level-name="Dungeon Raider"></a></div><div class="level-shadow locked " style="left: 75.18739442567568%; bottom: 47.40315124354005%"></div><div class="level-info-container rtl-allowed" data-level-slug="dungeon-raider" data-level-path="level" data-level-name="Dungeon Raider" data-level-original="60e4f2482356c40019afdf7e"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed  premium"><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Dungeon Raider (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Navigate the dungeon and obtain the treasure of Kithgard.</p>
+</div><p><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 82.14931123840698%; bottom: 47.31551283388982%; background-color: rgb(193, 193, 193)" data-level-slug="the-gauntlet" data-level-original="5452d8b906a59e000067e4fa" title="" data-original-title="The Gauntlet"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="the-gauntlet" data-level-path="level" data-level-name="The Gauntlet"></a><img class="treasure-chest" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/silver-chest.png"></div><div class="level-shadow locked " style="left: 82.14931123840698%; bottom: 47.31551283388982%"></div><div class="level-info-container rtl-allowed" data-level-slug="the-gauntlet" data-level-path="level" data-level-name="The Gauntlet" data-level-original="5452d8b906a59e000067e4fa"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed  premium"><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">The Gauntlet (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Use all of your skills to survive the gauntlet.</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.variables">Variables</kbd><kbd data-i18n="concepts.while_loops_simple">While Loops</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 65.14835557673975%; bottom: 42.52972394314869%; background-color: rgb(193, 193, 193)" data-level-slug="the-prisoner" data-level-original="54d4fbb571f9c75605f48cab" title="" data-original-title="The Prisoner"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="the-prisoner" data-level-path="level" data-level-name="The Prisoner"></a></div><div class="level-shadow locked " style="left: 65.14835557673975%; bottom: 42.52972394314869%"></div><div class="level-info-container rtl-allowed" data-level-slug="the-prisoner" data-level-path="level" data-level-name="The Prisoner" data-level-original="54d4fbb571f9c75605f48cab"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed "><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">The Prisoner (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Free the prisoner and you'll gain an ally.</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.strings">Strings</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 73.11013590033974%; bottom: 38.8670182517331%; background-color: rgb(193, 193, 193)" data-level-slug="kithgard-librarian" data-level-original="5604169b60537b8705386a59" title="" data-original-title="Kithgard Librarian"><img class="hero-portrait" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/portrait(1).png"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="kithgard-librarian" data-level-path="level" data-level-name="Kithgard Librarian"></a><img class="treasure-chest" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/gold-chest.png"></div><div class="level-shadow locked " style="left: 73.11013590033974%; bottom: 38.8670182517331%"></div><div class="level-info-container rtl-allowed" data-level-slug="kithgard-librarian" data-level-path="level" data-level-name="Kithgard Librarian" data-level-original="5604169b60537b8705386a59"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed "><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Kithgard Librarian (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Seek help from a friendly Librarian!</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.strings">Strings</kbd><kbd data-i18n="concepts.reading_docs">Reading the Docs</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 48.25875834127741%; bottom: 38.612085459183675%; background-color: rgb(193, 193, 193)" data-level-slug="banefire" data-level-original="54dbd516c81bd84f0580eb72" title="" data-original-title="Banefire"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="banefire" data-level-path="level" data-level-name="Banefire"></a></div><div class="level-shadow locked " style="left: 48.25875834127741%; bottom: 38.612085459183675%"></div><div class="level-info-container rtl-allowed" data-level-slug="banefire" data-level-path="level" data-level-name="Banefire" data-level-original="54dbd516c81bd84f0580eb72"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed  premium"><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Banefire (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Dance around the fire, or your bones will be the next to burn.</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 44.0037959039548%; bottom: 31.550567363112393%; background-color: rgb(193, 193, 193)" data-level-slug="favorable-odds" data-level-original="5452972f57e83800009730de" title="" data-original-title="Favorable Odds (practice)"><img class="hero-portrait" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/portrait(2).png"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="favorable-odds" data-level-path="level" data-level-name="Favorable Odds"></a><img class="treasure-chest" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/gold-chest.png"></div><div class="level-shadow locked " style="left: 44.0037959039548%; bottom: 31.550567363112393%"></div><div class="level-info-container rtl-allowed" data-level-slug="favorable-odds" data-level-path="level" data-level-name="Favorable Odds" data-level-original="5452972f57e83800009730de"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed  premium"><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Favorable Odds (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Two ogres bar your passage out of the dungeon.</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.strings">Strings</kbd></p></div></div><div class="level next  has-tooltip" style="left: 9.023157625383828%; bottom: 25.479264475743346%; background-color: rgb(255, 80, 60)" data-level-slug="dungeons-of-kithgard" data-level-original="5411cb3769152f1707be029c" title="" data-original-title="Dungeons of Kithgard"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="dungeons-of-kithgard" data-level-path="level" data-level-name="Dungeons of Kithgard"></a><img class="banner" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/level-banner-unlock.png"><img class="item-portrait item-portrait-on-banner" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/portrait(3).png"><img class="treasure-chest" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/bronze-chest.png"></div><div class="level-shadow next " style="left: 9.023157625383828%; bottom: 25.479264475743346%"></div><div class="level-info-container rtl-allowed" data-level-slug="dungeons-of-kithgard" data-level-path="level" data-level-name="Dungeons of Kithgard" data-level-original="5411cb3769152f1707be029c" style="display: block; left: 20px; top: 300px;"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed "><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Dungeons of Kithgard</h3><div class="level-description rtl-allowed" dir="auto"><p>Grab the gem and escape the dungeon—but don’t run into anything else. In this level, you’ll learn basic movements for your hero.</p>
+</div><p><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd></p><button class="btn btn-success btn btn-lg btn-illustrated start-level" data-i18n="common.play">Play</button></div></div><div class="level locked  has-tooltip" style="left: 77.43684461391803%; bottom: 25.444720298833822%; background-color: rgb(193, 193, 193)" data-level-slug="cell-commentary" data-level-original="57aa1bd5e5636725008854c0" title="" data-original-title="Cell Commentary"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="cell-commentary" data-level-path="level" data-level-name="Cell Commentary"></a><img class="treasure-chest" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/bronze-chest.png"></div><div class="level-shadow locked " style="left: 77.43684461391803%; bottom: 25.444720298833822%"></div><div class="level-info-container rtl-allowed" data-level-slug="cell-commentary" data-level-path="level" data-level-name="Cell Commentary" data-level-original="57aa1bd5e5636725008854c0"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed "><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Cell Commentary (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Trapped in a prison cell with the famous wizard! Say the password to get wizards's help.</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.strings">Strings</kbd><kbd data-i18n="concepts.reading_docs">Reading the Docs</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 63.41754051477597%; bottom: 24.1008791909621%; background-color: rgb(193, 193, 193)" data-level-slug="true-names" data-level-original="541875da4c16460000ab990f" title="" data-original-title="True Names"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="true-names" data-level-path="level" data-level-name="True Names"></a></div><div class="level-shadow locked " style="left: 63.41754051477597%; bottom: 24.1008791909621%"></div><div class="level-info-container rtl-allowed" data-level-slug="true-names" data-level-path="level" data-level-name="True Names" data-level-original="541875da4c16460000ab990f"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed "><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">True Names (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Learn an enemy's true name to defeat it.</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.strings">Strings</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 31.159139656816016%; bottom: 23.34012846209913%; background-color: rgb(193, 193, 193)" data-level-slug="shadow-guard" data-level-original="54174347844506ae0195a0b8" title="" data-original-title="Shadow Guard"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="shadow-guard" data-level-path="level" data-level-name="Shadow Guard"></a><img class="treasure-chest" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/bronze-chest.png"></div><div class="level-shadow locked " style="left: 31.159139656816016%; bottom: 23.34012846209913%"></div><div class="level-info-container rtl-allowed" data-level-slug="shadow-guard" data-level-path="level" data-level-name="Shadow Guard" data-level-original="54174347844506ae0195a0b8"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed "><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Shadow Guard (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Evade the charging ogre to grab the gems and get to the other side safely. Watch out for the spikes!</p>
+</div><p><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 41.934282650143%; bottom: 21.59085732507289%; background-color: rgb(193, 193, 193)" data-level-slug="enemy-mine" data-level-original="54ca592de4983255055a5478" title="" data-original-title="Enemy Mine"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="enemy-mine" data-level-path="level" data-level-name="Enemy Mine"></a></div><div class="level-shadow locked " style="left: 41.934282650143%; bottom: 21.59085732507289%"></div><div class="level-info-container rtl-allowed" data-level-slug="enemy-mine" data-level-path="level" data-level-name="Enemy Mine" data-level-original="54ca592de4983255055a5478"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed "><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Enemy Mine (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Tread carefully. Danger is afoot!</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 19.047902764537657%; bottom: 19.597872631195333%; background-color: rgb(193, 193, 193)" data-level-slug="gems-in-the-deep" data-level-original="54173c90844506ae0195a0b4" title="" data-original-title="Gems in the Deep"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="gems-in-the-deep" data-level-path="level" data-level-name="Gems in the Deep"></a></div><div class="level-shadow locked " style="left: 19.047902764537657%; bottom: 19.597872631195333%"></div><div class="level-info-container rtl-allowed" data-level-slug="gems-in-the-deep" data-level-path="level" data-level-name="Gems in the Deep" data-level-original="54173c90844506ae0195a0b4"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed "><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Gems in the Deep (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Quickly collect the gems; you will need them.</p>
+</div><p><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 64.96139290710214%; bottom: 19.55194966303545%; background-color: rgb(193, 193, 193)" data-level-slug="dangerous-steps" data-level-original="5a2143895b81a70039af8907" title="" data-original-title="Dangerous Steps"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="dangerous-steps" data-level-path="level" data-level-name="Dangerous Steps"></a></div><div class="level-shadow locked " style="left: 64.96139290710214%; bottom: 19.55194966303545%"></div><div class="level-info-container rtl-allowed" data-level-slug="dangerous-steps" data-level-path="level" data-level-name="Dangerous Steps" data-level-original="5a2143895b81a70039af8907"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed  premium"><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Dangerous Steps (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Use strings to defeat ogres.</p>
+</div><p><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 84.71460915157293%; bottom: 18.907730502915456%; background-color: rgb(193, 193, 193)" data-level-slug="the-raised-sword" data-level-original="5418aec24c16460000ab9aa6" title="" data-original-title="The Raised Sword (practice)"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="the-raised-sword" data-level-path="level" data-level-name="The Raised Sword"></a><img class="treasure-chest" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/bronze-chest.png"></div><div class="level-shadow locked " style="left: 84.71460915157293%; bottom: 18.907730502915456%"></div><div class="level-info-container rtl-allowed" data-level-slug="the-raised-sword" data-level-path="level" data-level-name="The Raised Sword" data-level-original="5418aec24c16460000ab9aa6"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed "><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">The Raised Sword (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Learn to equip yourself for combat.</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.strings">Strings</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 54.584356246590296%; bottom: 18.830537875626042%; background-color: rgb(193, 193, 193)" data-level-slug="sleeping-on-the-job" data-level-original="580aaafe990e3e1f00bde535" title="" data-original-title="Sleeping on the Job"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="sleeping-on-the-job" data-level-path="level" data-level-name="Sleeping on the Job"></a></div><div class="level-shadow locked " style="left: 54.584356246590296%; bottom: 18.830537875626042%"></div><div class="level-info-container rtl-allowed" data-level-slug="sleeping-on-the-job" data-level-path="level" data-level-name="Sleeping on the Job" data-level-original="580aaafe990e3e1f00bde535"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed  premium"><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Sleeping on the Job (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Two guards hold their post deep in the dungeons of Kithgard.</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd><kbd data-i18n="concepts.strings">Strings</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 38.3771481178396%; bottom: 18.327094636894824%; background-color: rgb(193, 193, 193)" data-level-slug="crawlways-of-kithgard" data-level-original="545287ef57e83800009730d5" title="" data-original-title="Crawlways of Kithgard (practice)"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="crawlways-of-kithgard" data-level-path="level" data-level-name="Crawlways of Kithgard"></a></div><div class="level-shadow locked " style="left: 38.3771481178396%; bottom: 18.327094636894824%"></div><div class="level-info-container rtl-allowed" data-level-slug="crawlways-of-kithgard" data-level-path="level" data-level-name="Crawlways of Kithgard" data-level-original="545287ef57e83800009730d5"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed  premium"><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Crawlways of Kithgard (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Two hallways, one solution. Timing is of the essence.</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 62%; bottom: 16%; background-color: rgb(193, 193, 193)" data-level-slug="sleep-hour" data-level-original="5a24d7c3693bbe00217a6c7a" title="" data-original-title="Sleep Hour"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="sleep-hour" data-level-path="level" data-level-name="Sleep Hour"></a></div><div class="level-shadow locked " style="left: 62%; bottom: 16%"></div><div class="level-info-container rtl-allowed" data-level-slug="sleep-hour" data-level-path="level" data-level-name="Sleep Hour" data-level-original="5a24d7c3693bbe00217a6c7a"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed  premium"><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Sleep Hour (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Use all of your programming prowess to puzzle past peril!</p>
+</div><p><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 28.75357483317445%; bottom: 15.418299016034986%; background-color: rgb(193, 193, 193)" data-level-slug="kounter-kithwise" data-level-original="54527a6257e83800009730c7" title="" data-original-title="Kounter Kithwise (practice)"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="kounter-kithwise" data-level-path="level" data-level-name="Kounter Kithwise"></a></div><div class="level-shadow locked " style="left: 28.75357483317445%; bottom: 15.418299016034986%"></div><div class="level-info-container rtl-allowed" data-level-slug="kounter-kithwise" data-level-path="level" data-level-name="Kounter Kithwise" data-level-original="54527a6257e83800009730c7"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed  premium"><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Kounter Kithwise (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Keep out of sight of the ogre patrol.</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 12.479146806482364%; bottom: 14.001571610787167%; background-color: rgb(193, 193, 193)" data-level-slug="forgetful-gemsmith" data-level-original="544a98f62d002f0000fe331a" title="" data-original-title="Forgetful Gemsmith (practice)"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="forgetful-gemsmith" data-level-path="level" data-level-name="Forgetful Gemsmith"></a></div><div class="level-shadow locked " style="left: 12.479146806482364%; bottom: 14.001571610787167%"></div><div class="level-info-container rtl-allowed" data-level-slug="forgetful-gemsmith" data-level-path="level" data-level-name="Forgetful Gemsmith" data-level-original="544a98f62d002f0000fe331a"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed  premium"><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Forgetful Gemsmith (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>There are gems scattered all over the dungeons in Kithgard!</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd></p></div></div><div class="level locked  has-tooltip" style="left: 47.210856519367155%; bottom: 10.505464837228718%; background-color: rgb(193, 193, 193)" data-level-slug="illusory-interruption" data-level-original="54caa542e1bd9a4f054648b0" title="" data-original-title="Illusory Interruption (practice)"><a href="https://codecombat.com/play/dungeon?hour_of_code=true#" data-level-slug="illusory-interruption" data-level-path="level" data-level-name="Illusory Interruption"></a></div><div class="level-shadow locked " style="left: 47.210856519367155%; bottom: 10.505464837228718%"></div><div class="level-info-container rtl-allowed" data-level-slug="illusory-interruption" data-level-path="level" data-level-name="Illusory Interruption" data-level-original="54caa542e1bd9a4f054648b0"><div class="progress progress-striped active hide"><div class="progress-bar" style="width: 100%"></div></div><div class="level-info rtl-allowed  premium"><div class="level-status rtl-allowed" dir="auto"></div><h3 dir="ltr">Illusory Interruption (Locked)</h3><div class="level-description rtl-allowed" dir="auto"><p>Distract the guards, then escape.</p>
+</div><p><kbd data-i18n="concepts.arguments">Arguments</kbd><kbd data-i18n="concepts.basic_syntax">Basic Syntax</kbd></p></div></div><!-- Minecraft Modal--><div class="level cube-level has-tooltip" id="cube-level-container" style="display: none;" data-original-title="" title=""><div id="spinning-cube"><div class="cube"><div class="front"></div><div class="back"></div><div class="top"></div><div class="bottom"></div><div class="left"></div><div class="right"></div></div></div></div><!-- Minecraft Modal--><div class="cube-level level-shadow" id="cube-level-shadow" style="left: 30%; top: 16.5%;display: none"></div></div><div class="game-controls header-font picoctf-hide"><button class="btn premium-menu-icon has-tooltip" data-i18n="[title]subscribe.subscribe_modal_title" title="" data-original-title="CodeCombat Premium"></button><button class="btn poll hidden" data-i18n="[title]play.poll" title="Poll"></button><a class="btn clans has-tooltip" href="https://codecombat.com/clans" data-i18n="[title]clans.clans" title="" data-original-title="Clans"></a><button class="btn items has-tooltip" data-toggle="coco-modal" data-target="play/modal/PlayItemsModal" data-i18n="[title]play.items" title="" data-original-title="Items"></button><button class="btn heroes has-tooltip" data-toggle="coco-modal" data-target="play/modal/PlayHeroesModal" data-i18n="[title]play.heroes" title="" data-original-title="Heroes"></button><button class="btn achievements has-tooltip" data-toggle="coco-modal" data-target="play/modal/PlayAchievementsModal" data-i18n="[title]play.achievements" title="" data-original-title="Achievements"></button></div><div class="user-status header-font picoctf-hide"><div class="user-status-line"><span class="gem gem-30"></span><span class="spr" id="gems-count">1000</span><div class="rtl-allowed"><span class="level-indicator" data-i18n="general.player_level">Level</span><span class="player-level spr">1</span></div><span class="player-hero-icon"></span><span class="player-name" data-i18n="play.anonymous">Anonymous Player</span><button class="btn btn-illustrated login-button btn-warning" data-i18n="login.log_in">Log In</button><button class="btn btn-illustrated signup-button btn-danger" data-i18n="signup.sign_up">Sign Up</button><select class="language-dropdown btn btn-illustrated btn-primary"><option value="en-US">English (US)</option><option value="en-GB">English (UK)</option><option value="zh-HANS">简体中文</option><option value="zh-HANT">繁體中文</option><option value="ru">русский</option><option value="es-ES">español (ES)</option><option value="es-419">español (América Latina)</option><option value="fr">français</option><option value="pt-PT">Português (Portugal)</option><option value="pt-BR">Português (Brasil)</option><option class="select-dash" disabled="disabled">----------------------------------</option><option value="ar">العربية</option><option value="az">azərbaycan dili</option><option value="bg">български език</option><option value="ca">Català</option><option value="cs">čeština</option><option value="da">dansk</option><option value="de-DE">Deutsch (Deutschland)</option><option value="de-AT">Deutsch (Österreich)</option><option value="de-CH">Deutsch (Schweiz)</option><option value="et">Eesti</option><option value="el">Ελληνικά</option><option value="eo">Esperanto</option><option value="fil">Filipino</option><option value="fa">فارسی</option><option value="gl">Galego</option><option value="ko">한국어</option><option value="haw">ʻŌlelo Hawaiʻi</option><option value="he">עברית</option><option value="hr">hrvatski jezik</option><option value="hu">magyar</option><option value="id">Bahasa Indonesia</option><option value="it">Italiano</option><option value="kk">қазақ тілі</option><option value="lt">lietuvių kalba</option><option value="lv">latviešu</option><option value="mi">te reo Māori</option><option value="mk-MK">Македонски</option><option value="hi">मानक हिन्दी</option><option value="mn">Монгол хэл</option><option value="ms">Bahasa Melayu</option><option value="my">မြန်မာစကား</option><option value="nl-BE">Nederlands (België)</option><option value="nl-NL">Nederlands (Nederland)</option><option value="ja">日本語</option><option value="nb">Norsk Bokmål</option><option value="nn">Norsk Nynorsk</option><option value="uz">O'zbekcha</option><option value="pl">Polski</option><option value="ro">limba română</option><option value="sr">српски</option><option value="sk">slovenčina</option><option value="sl">slovenščina</option><option value="fi">suomi</option><option value="sv">Svenska</option><option value="th">ไทย</option><option value="tr">Türkçe</option><option value="uk">українська</option><option value="ur">اُردُو</option><option value="vi">Tiếng Việt</option><option value="zh-WUU-HANS">吴语</option><option value="zh-WUU-HANT">吳語</option></select></div></div><button class="btn btn-lg btn-inverse campaign-control-button picoctf-hide vol-up" id="volume-button" data-i18n="[title]play.adjust_volume" title="Adjust volume"><div class="glyphicon glyphicon-volume-off"></div><div class="glyphicon glyphicon-volume-down"></div><div class="glyphicon glyphicon-volume-up"></div></button><button class="btn btn-lg btn-inverse campaign-control-button picoctf-hide" id="back-button" data-i18n="[title]resources.campaigns" title="Campaigns"><div class="glyphicon glyphicon-globe"></div></button><h1 class="picoctf-hide" id="campaign-status"><div class="campaign-status-background rtl-allowed"><div class="campaign-name rtl-allowed"><span>Kithgard Dungeon</span></div><div class="levels-completed rtl-allowed"><span>0</span>/<span>44</span></div></div></h1></div></div></div><div class="modal-content hide" id="modal-wrapper"><div id="hoc-interstitial-modal" class="modal" style="display: none;"><div class="modal-dialog"></div></div></div><flying-focus id="flying-focus" style="transition-duration: 0.1s; left: 773.688px; top: 113px; width: 147px; height: 46px;"></flying-focus><style>#flying-focus {	position: absolute;	margin: 0;	background: transparent;	-webkit-transition-property: left, top, width, height, opacity;	transition-property: left, top, width, height, opacity;	-webkit-transition-timing-function: cubic-bezier(0, 0.2, 0, 1);	transition-timing-function: cubic-bezier(0, 0.2, 0, 1);	visibility: hidden;	pointer-events: none;	box-shadow: 0 0 2px 3px #78aeda, 0 0 2px #78aeda inset; border-radius: 2px;}#flying-focus.flying-focus_visible {	visibility: visible;	z-index: 9999;}.flying-focus_target {	outline: none !important; /* Doesn't work in Firefox :( */}/* http://stackoverflow.com/questions/71074/how-to-remove-firefoxs-dotted-outline-on-buttons-as-well-as-links/199319 */.flying-focus_target::-moz-focus-inner {	border: 0 !important;}/* Replace it with @supports rule when browsers catch up */@media screen and (-webkit-min-device-pixel-ratio: 0) {	#flying-focus {		box-shadow: none;		outline: 5px auto -webkit-focus-ring-color;		outline-offset: -3px;	}}@media print {	#flying-focus {		display: none;	}}</style><img src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/begin_code_combat.png" style="visibility: hidden;"><iframe name="__privateStripeMetricsController8110" frameborder="0" allowtransparency="true" scrolling="no" allow="payment *" src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/m-outer-f7902241893e7a497417843cb15dc858.html" aria-hidden="true" tabindex="-1" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; visibility: hidden !important; position: fixed !important; height: 1px !important; pointer-events: none !important; user-select: none !important;"></iframe><div id="injected-css" style="display: none;"><style>#campaign-view .map-background { background-image: url(/file/db/campaign/549f07f7e21e041139ef28c7/Dungeon_Map_1920.jpg); }
+@media screen and (max-width: 1366px) { #campaign-view .map-background { background-image: url(/file/db/campaign/549f07f7e21e041139ef28c7/Dungeon_Map_1366.jpg); } }</style></div><img src="./Play CodeCombat Levels - Learn Python, JavaScript, and HTML _ CodeCombat_files/pointer.png" class="highlight-pointer" data-cid="view4" style="opacity: 0; transition: all 0.4s ease-in 0s; transform: rotate(0rad) translate(-3px, -47px); top: -50px; left: 117.094px; right: -50px;"></body></html>

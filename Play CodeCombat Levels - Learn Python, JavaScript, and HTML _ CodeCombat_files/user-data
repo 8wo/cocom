@@ -1,0 +1,7 @@
+window.serverConfig = {"simulationThroughputRatio":1,"sessionSaveDelay":{"registered":{"min":10,"max":30},"anonymous":{"min":20,"max":60}},"showCodePlayAds":false,"latestAnnouncement":2,"picoCTF":false,"production":true,"codeNinjas":false,"fullUnsafeContentHostname":"codecombatprojects.com","buildInfo":{"sha":"production-2021-11-26-00-35-31"}};
+window.userObject = {"_id":"61a8c93fde6a190023f7deaa","createdOnHost":"codecombat.com","country":"united-kingdom","testGroupNumber":53,"anonymous":true,"__v":0,"referrer":"https:\/\/www.google.co.uk\/","hourOfCode":true,"volume":1,"dateCreated":"2021-12-02T13:25:19.144Z"};
+window.serverSession = {};
+window.features = {};
+window.me = {
+	get: function(attribute) { return window.userObject[attribute]; }
+};
